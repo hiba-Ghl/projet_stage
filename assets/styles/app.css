@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(162, 201, 218);
+}
+h1{
+    text-align: center;
+    font-size: larger;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
+/* assets/styles/custom.css */
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 12px 15px;
+}
+
+.table thead tr {
+    background-color: #0743e9;
+    color: #ffffff;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.table th:first-child,
+.table td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.table th:last-child,
+.table td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.table tbody tr {
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 10px;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #e9f5f2;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #7076a2;
+}
+
+.table tbody tr:hover {
+    background-color: #bce0f7;
+}
+
+.btn {
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 100px;
+  background-color: #81afe0;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+button {
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Montserrat,sans-serif;
+  font-size: .9em;
+  margin: 5px;
+  padding: 7px 5px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des champs de formulaire */
+.form input[type="text"],
+.form input[type="email"],
+.form textarea,
+.form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Style des boutons */
+.form button {
+    background-color: #009879;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form button:hover {
+    background-color: #007d66;
+}

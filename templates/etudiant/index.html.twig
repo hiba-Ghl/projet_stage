@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Etudiant index{% endblock %}
+
+{% block body %}
+    <h1>Liste des étudiants</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Note</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for etudiant in etudiants %}
+            <tr>
+                <td>{{ etudiant.id }}</td>
+                <td>{{ etudiant.nom }}</td>
+                <td>{{ etudiant.prenom }}</td>
+                <td>{{ etudiant.note }}</td>
+                <td>
+                    <button><a href="{{ path('app_etudiant_show', {'id': etudiant.id}) }}">Afficher</a></button>
+                    <button><a href="{{ path('app_etudiant_edit', {'id': etudiant.id}) }}">Modifier</a></button>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <button class="btn"><a href="{{ path('app_etudiant_new') }}">Ajouter un nouvel etudiant</a></button>
+{% endblock %}
