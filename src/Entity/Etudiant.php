@@ -20,7 +20,7 @@ class Etudiant
     #[ORM\Column(length: 30)]
     private ?string $prenom = null;
 
-    #[ORM\Column(type: Types::DECIMAL, precision: 2, scale: 2)]
+    #[ORM\Column(type: Types::DECIMAL, precision: 5, scale: 2)]
     private ?string $note = null;
 
     public function getId(): ?int
